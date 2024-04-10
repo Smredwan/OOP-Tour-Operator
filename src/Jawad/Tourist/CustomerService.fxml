@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.event.ActionEvent?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="250" layoutY="150">
+        <Label text="Select Contact Method" style="-fx-font-size: 20px;" />
+        <Button text="Email Support" onAction="emailSupportClicked" />
+        <Button text="Phone Support" onAction="phoneSupportClicked" />
+        <Button text="Live Chat" onAction="liveChatClicked" />
+    </VBox>
+
+</AnchorPane>
+
