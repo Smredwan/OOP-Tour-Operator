@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="334.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="24.0" layoutY="14.0" spacing="10.0">
+         <children>
+            <Label text="Payments Section" />
+            <TableView prefHeight="200.0" prefWidth="600.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Tour ID" />
+                  <TableColumn prefWidth="150.0" text="Tour Name" />
+                  <TableColumn prefWidth="75.0" text="Base Rate" />
+                  <TableColumn prefWidth="75.0" text="Tips" />
+                  <TableColumn prefWidth="75.0" text="Incentives" />
+                  <TableColumn prefWidth="75.0" text="Deductions" />
+                  <TableColumn prefWidth="75.0" text="Total Payment" />
+               </columns>
+            </TableView>
+            <Button mnemonicParsing="false" text="View Tour Details" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
