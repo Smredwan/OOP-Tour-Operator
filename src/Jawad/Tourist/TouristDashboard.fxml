@@ -10,42 +10,42 @@
    <children>
       <ToolBar prefHeight="40.0" prefWidth="925.0">
         <items>
-          <Button mnemonicParsing="false" text="Home">
+          <Button fx:id="homeButton" mnemonicParsing="false" text="Home">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="updateProfileButton" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="showUpdateProfile" text="Update Profile">
+            <Button fx:id="updateProfileButton" mnemonicParsing="false" onAction="#showUpdateProfile" text="Update Profile">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="bookPackageButton" layoutX="114.0" layoutY="12.0" mnemonicParsing="false" onAction="showBookPackage" text="Book Package">
+            <Button fx:id="bookPackageButton" mnemonicParsing="false" onAction="#showBookPackage" text="Book Package">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="bookHotelButton" layoutX="302.0" layoutY="12.0" mnemonicParsing="false" onAction="showBookHotel" text="Book Hotel">
+            <Button fx:id="bookHotelButton" mnemonicParsing="false" onAction="#showBookHotel" text="Book Hotel">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="referFriendButton" layoutX="336.0" layoutY="12.0" mnemonicParsing="false" onAction="showReferFriend" text="Refer a Friend">
+            <Button fx:id="paymentOptionsButton" mnemonicParsing="false" onAction="#showPaymentOptions" text="Payment Options">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="paymentOptionsButton" layoutX="252.0" layoutY="12.0" mnemonicParsing="false" onAction="showPaymentsOptions" text="Payment Options">
+            <Button fx:id="termsAndConditionsButton" mnemonicParsing="false" onAction="#showTerwsandConditions" text="Terms and Conditions">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="customerServiceButton" layoutX="468.0" layoutY="12.0" mnemonicParsing="false" onAction="showCustomerService" text="Customer Service">
+            <Button fx:id="customerServiceButton" layoutX="468.0" layoutY="12.0" mnemonicParsing="false" onAction="#showCustomerService" text="Customer Service">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="feedbackButton" layoutX="567.0" layoutY="12.0" mnemonicParsing="false" onAction="showFeedback" text="Feedback">
+            <Button fx:id="feedback" layoutX="612.0" layoutY="12.0" mnemonicParsing="false" onAction="#showFeedback" text="Feedback">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
