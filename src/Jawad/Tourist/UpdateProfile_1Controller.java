@@ -38,13 +38,12 @@ public class UpdateProfile_1Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // Initialization logic goes here, if needed
+
     }    
 
-    // Define any other methods or event handlers here, if needed
 @FXML
 private void onUpdateButtonClicked() {
-    // Get the values from the text fields
+
     String username = usernameField.getText();
     String id = idField.getText();
     String phoneNumber = phoneNumberField.getText();
@@ -52,36 +51,32 @@ private void onUpdateButtonClicked() {
     String email = emailField.getText();
     String country = countryField.getText();
 
-    // Validate the input fields (optional)
     if (username.isEmpty() || id.isEmpty() || phoneNumber.isEmpty() || gender.isEmpty() || email.isEmpty() || country.isEmpty()) {
-        // Display an error message or handle invalid input
-        // For example, you can show an alert dialog
+
         Alert alert = new Alert(AlertType.ERROR);
         alert.setTitle("Error");
         alert.setHeaderText(null);
         alert.setContentText("All fields are required!");
         alert.showAndWait();
-        return; // Exit the method if any field is empty
+        return;
     }
 
-    // Perform the update operation
+
     boolean success = updateProfile(username, id, phoneNumber, gender, email, country);
 
-    // Check if the update was successful
+
     if (success) {
-        // Display a success message or perform any other action
-        // For example, you can show a confirmation dialog
+
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Success");
         alert.setHeaderText(null);
         alert.setContentText("Profile updated successfully!");
         alert.showAndWait();
         
-        // Optionally, you can clear the input fields after successful update
+
         clearFields();
     } else {
-        // Display an error message or handle update failure
-        // For example, you can show an alert dialog
+
         Alert alert = new Alert(AlertType.ERROR);
         alert.setTitle("Error");
         alert.setHeaderText(null);
@@ -90,16 +85,12 @@ private void onUpdateButtonClicked() {
     }
 }
 
-// Method to perform the update operation
+
 private boolean updateProfile(String username, String id, String phoneNumber, String gender, String email, String country) {
-    // Your update logic goes here
-    // This method should perform the necessary database or file operations to update the user profile
-    
-    // For demonstration purposes, let's assume the update is always successful
     return true;
 }
 
-// Method to clear input fields
+
 private void clearFields() {
     usernameField.clear();
     idField.clear();
@@ -114,17 +105,17 @@ private void clearFields() {
     
 @FXML
 private void onBackButtonClicked() throws IOException {
-    // Load the FXML file for the previous scene
+
     FXMLLoader loader = new FXMLLoader(getClass().getResource("previous_scene.fxml"));
     Parent root = loader.load();
 
-    // Create a new scene
+
     Scene scene = new Scene(root);
 
-    // Get the stage information
+
     Stage stage = (Stage) backButton.getScene().getWindow();
 
-    // Set the new scene on the stage
+
     stage.setScene(scene);
     stage.show();
  }
