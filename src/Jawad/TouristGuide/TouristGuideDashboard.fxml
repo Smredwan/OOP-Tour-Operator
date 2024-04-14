@@ -6,37 +6,36 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="782.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jawad.TouristGuide.TouristGuideDashboardController">
    <children>
       <ToolBar layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="762.0">
         <items>
-          <Button mnemonicParsing="false" text="Home">
+          <Button fx:id="homeButton" mnemonicParsing="false" text="Home">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" text="Update Profile ">
+            <Button fx:id="updateProfileButton" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="handleUpdateProfileButtonClick" text="Update Profile ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="64.0" layoutY="12.0" mnemonicParsing="false" text="Update Tour">
+            <Button fx:id="updateTourButton" layoutX="64.0" layoutY="12.0" mnemonicParsing="false" onAction="handleUpdateTourButtonClick" text="Update Tour">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="170.0" layoutY="12.0" mnemonicParsing="false" text="Track Payments">
+            <Button fx:id="trackPaymentsButton" layoutX="170.0" layoutY="12.0" mnemonicParsing="false" onAction="handleTrackPaymentButtonClick" text="Track Payments">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="261.0" layoutY="12.0" mnemonicParsing="false" text="Terms and Conditions">
+            <Button fx:id="termsAndConditionsButton" layoutX="261.0" layoutY="12.0" mnemonicParsing="false" onAction="handleTermsAndConditionsButtonClick" text="Terms and Conditions">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="371.0" layoutY="12.0" mnemonicParsing="false" text="Emergency Procedure">
+            <Button fx:id="feedBackButton" layoutX="515.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleFeedbackButtonClick" text="FeedBack">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

@@ -1,4 +1,4 @@
-package Jawad.Tourist;
+package Jawad.TouristGuide;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,24 +16,20 @@ import javafx.stage.Stage;
  *
  * @author asus
  */
-public class TouristDashboardController implements Initializable {
+public class TouristGuideDashboardController implements Initializable {
 
     @FXML
     private Button homeButton;
     @FXML
     private Button updateProfileButton;
     @FXML
-    private Button bookPackageButton;
+    private Button UpdateTourButton;
     @FXML
-    private Button bookHotelButton;
-    @FXML
-    private Button paymentOptionsButton;
+    private Button trackPaymentsButton;
     @FXML
     private Button termsAndConditionsButton;
     @FXML
-    private Button customerServiceButton;
-    @FXML
-    private Button feedback;
+    private Button feedbackbutton;
 
     /**
      * Initializes the controller class.
@@ -45,32 +41,22 @@ public class TouristDashboardController implements Initializable {
     
     @FXML
     private void handleUpdateProfileButtonClick() {
-        loadFXML("UpdateProfile_1.fxml");
+        loadFXML("UpdateProfile.fxml");
     }
 
     @FXML
-    private void handleBookPackageButtonClick() {
-        loadFXML("BookPackage.fxml");
+    private void handleUpdateTourButtonClick() {
+        loadFXML("UpdateTour.fxml");
     }
 
     @FXML
-    private void handleBookHotelButtonClick() {
-        loadFXML("BookHotel.fxml");
-    }
-
-    @FXML
-    private void handlePaymentOptionsButtonClick() {
+    private void handleTrackPaymentButtonClick() {
         loadFXML("PaymentOptions.fxml");
     }
 
     @FXML
     private void handleTermsAndConditionsButtonClick() {
         loadFXML("TermsAndConditions.fxml");
-    }
-
-    @FXML
-    private void handleCustomerServiceButtonClick() {
-        loadFXML("CustomerService.fxml");
     }
 
     @FXML
@@ -89,4 +75,3 @@ public class TouristDashboardController implements Initializable {
         }
     }
 }
-
