@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mashraful.Tour_Coordinator.AssaignGuides_DBController">
+    <children>
+        <Label layoutX="238.0" layoutY="52.0" text="Assign Guides">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <Label layoutX="126.0" layoutY="120.0" text="Select Tour:" />
+        <ComboBox fx:id="selectTourComboBox" layoutX="231.0" layoutY="116.0" prefWidth="150.0" />
+        <Label layoutX="126.0" layoutY="180.0" text="Select Guide:" />
+        <ComboBox fx:id="selectGuideComboBox" layoutX="231.0" layoutY="176.0" prefWidth="150.0" />
+        <Button layoutX="251.0" layoutY="250.0" mnemonicParsing="false" onAction="#assignGuideButtonOnAction" text="Assign Guide" />
+    </children>
+</AnchorPane>
