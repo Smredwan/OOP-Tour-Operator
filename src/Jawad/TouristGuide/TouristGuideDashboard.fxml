@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jawad.TouristGuide.TouristGuideDashboardController">
+   <children>
+      <ToolBar layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="762.0">
+        <items>
+          <Button fx:id="homeButton" mnemonicParsing="false" text="Home">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateProfileButton" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="handleUpdateProfileButtonClick" text="Update Profile ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateTourButton" layoutX="64.0" layoutY="12.0" mnemonicParsing="false" onAction="handleUpdateTourButtonClick" text="Update Tour">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="trackPaymentsButton" layoutX="170.0" layoutY="12.0" mnemonicParsing="false" onAction="handleTrackPaymentButtonClick" text="Track Payments">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="termsAndConditionsButton" layoutX="261.0" layoutY="12.0" mnemonicParsing="false" onAction="handleTermsAndConditionsButtonClick" text="Terms and Conditions">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="feedBackButton" layoutX="515.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleFeedbackButtonClick" text="FeedBack">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+      <Label layoutX="179.0" layoutY="247.0" prefHeight="54.0" prefWidth="480.0" text="WELCOME TOURIST GUIDE" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

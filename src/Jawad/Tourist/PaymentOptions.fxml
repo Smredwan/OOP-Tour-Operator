@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jawad.Tourist.PaymentOptionsController">
+    <children>
+        <Label layoutX="50.0" layoutY="50.0" text="Payment Methods" />
+        <TextField fx:id="cardNumberField" layoutX="50.0" layoutY="100.0" promptText="Card Number" />
+        <TextField fx:id="expirationDateField" layoutX="50.0" layoutY="150.0" promptText="Expiration Date" />
+        <TextField fx:id="cvvField" layoutX="50.0" layoutY="200.0" promptText="CVV" />
+        <Button layoutX="50.0" layoutY="250.0" onAction="proceedToPayment" text="Proceed to Payment" />
+        <Label layoutX="50.0" layoutY="300.0" text="Verification Code:" />
+        <TextField fx:id="verificationCodeField" layoutX="50.0" layoutY="330.0" promptText="Enter Verification Code" />
+        <Button layoutX="50.0" layoutY="370.0" onAction="confirmPayment" text="Confirm Payment" />
+        <Label fx:id="confirmationLabel" layoutX="50.0" layoutY="450.0" />
+    </children>
+</AnchorPane>
