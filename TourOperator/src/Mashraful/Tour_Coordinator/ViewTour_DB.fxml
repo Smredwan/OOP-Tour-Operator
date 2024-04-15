@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mashraful.Tour_Coordinator.ViewTour_DBController">
+    <children>
+        <Label layoutX="263.0" layoutY="28.0" text="View Tours">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <TableView fx:id="viewToursTableView" layoutX="51.0" layoutY="75.0" prefHeight="250.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="touridTableColoumn" prefWidth="75.0" text="Tour ID" />
+                <TableColumn fx:id="tourNameTableColoumn" prefWidth="200.0" text="Tour Name" />
+                <TableColumn fx:id="destinationTableColoumn" prefWidth="100.0" text="Destination" />
+                <TableColumn fx:id="startDateTableColoumn" prefWidth="125.0" text="Start Date" />
+                <TableColumn prefWidth="125.0" text="End Date" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
