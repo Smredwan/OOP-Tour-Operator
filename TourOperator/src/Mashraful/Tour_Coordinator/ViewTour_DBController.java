@@ -10,15 +10,15 @@ import javafx.scene.control.TableView;
 public class ViewTour_DBController implements Initializable {
 
     @FXML
-    private TableView<?> viewToursTableView;
+    private TableView<String> viewToursTableView;
     @FXML
-    private TableColumn<?, ?> touridTableColoumn;
+    private TableColumn<String,String> touridTableColoumn;
     @FXML
-    private TableColumn<?, ?> tourNameTableColoumn;
+    private TableColumn<String,String> tourNameTableColoumn;
     @FXML
-    private TableColumn<?, ?> destinationTableColoumn;
+    private TableColumn<String,String> destinationTableColoumn;
     @FXML
-    private TableColumn<?, ?> startDateTableColoumn;
+    private TableColumn<String, String> startDateTableColoumn;
 
 
     @Override
