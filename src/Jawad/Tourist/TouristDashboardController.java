@@ -78,11 +78,11 @@ public class TouristDashboardController implements Initializable {
         loadFXML("TouristFeedback.fxml");
     }
 
-    private void loadFXML(String fxmlfilesname) {
+    private void loadFXML(String fxmlFilesName) {
         try {
             Parent root;
-            root = FXMLLoader.load(getClass().getResource(fxmlfilesname));
-            Stage stage = new Stage();
+            root = FXMLLoader.load(getClass().getResource(fxmlFilesName));
+            Stage stage = new Stage();  
             stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {
