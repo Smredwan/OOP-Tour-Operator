@@ -11,7 +11,7 @@ import javafx.scene.control.TableView;
 public class Manage_Clients_DBController implements Initializable {
 
     @FXML
-    private TableView<?> manageClientsTableView;
+    private TableView<String> manageClientsTableView;
 
 
     @Override
