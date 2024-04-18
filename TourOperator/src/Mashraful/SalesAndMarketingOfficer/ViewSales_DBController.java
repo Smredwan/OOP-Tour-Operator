@@ -10,15 +10,15 @@ import javafx.scene.control.TableView;
 public class ViewSales_DBController implements Initializable {
 
     @FXML
-    private TableView<?> viewSalesTableView;
+    private TableView<String> viewSalesTableView;
     @FXML
-    private TableColumn<?, ?> orderidTableColoumn;
+    private TableColumn<String, String> orderidTableColoumn;
     @FXML
-    private TableColumn<?, ?> clientNameTableColoumn;
+    private TableColumn<String, String> clientNameTableColoumn;
     @FXML
-    private TableColumn<?, ?> tourNameTableColoumn;
+    private TableColumn<String, String> tourNameTableColoumn;
     @FXML
-    private TableColumn<?, ?> saleAmountTableColoumn;
+    private TableColumn<String, String> saleAmountTableColoumn;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
