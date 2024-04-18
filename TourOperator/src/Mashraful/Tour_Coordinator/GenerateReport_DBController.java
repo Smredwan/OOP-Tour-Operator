@@ -10,7 +10,7 @@ import javafx.scene.control.ComboBox;
 public class GenerateReport_DBController implements Initializable {
 
     @FXML
-    private ComboBox<?> selectReportTypeComboBox;
+    private ComboBox<String> selectReportTypeComboBox;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
