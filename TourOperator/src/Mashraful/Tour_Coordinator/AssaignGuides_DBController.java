@@ -10,9 +10,9 @@ import javafx.scene.control.ComboBox;
 public class AssaignGuides_DBController implements Initializable {
 
     @FXML
-    private ComboBox<?> selectTourComboBox;
+    private ComboBox<String> selectTourComboBox;
     @FXML
-    private ComboBox<?> selectGuideComboBox;
+    private ComboBox<String> selectGuideComboBox;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
