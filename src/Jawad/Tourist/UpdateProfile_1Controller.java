@@ -106,7 +106,7 @@ private void clearFields() {
 @FXML
 private void onBackButtonClicked() throws IOException {
 
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("previous_scene.fxml"));
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("TouristDashboard.fxml"));
     Parent root = loader.load();
 
 
